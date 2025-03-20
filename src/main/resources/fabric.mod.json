@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "namelengthbypass",
+  "version": "${version}",
+  "name": "NameLengthBypass",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/namelengthbypass/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "rip.fanclub.namelengthbypass.client.NamelengthbypassClient"
+    ],
+    "main": [
+      "rip.fanclub.namelengthbypass.Namelengthbypass"
+    ]
+  },
+  "mixins": [
+    "namelengthbypass.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

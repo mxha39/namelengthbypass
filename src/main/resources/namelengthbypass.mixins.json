@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "rip.fanclub.namelengthbypass.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "LoginHelloC2SMixin",
+    "StringEncodingMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
