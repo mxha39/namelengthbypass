@@ -4,10 +4,11 @@
   "package": "rip.fanclub.namelengthbypass.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "EntitySelectorParserMixin",
+    "ItemStackComponentizationFixMixin",
     "LoginHelloC2SMixin",
-    "StringEncodingMixin"
-  ],
-  "client": [
+    "StringEncodingMixin",
+    "StringHelperMixin"
   ],
   "injectors": {
     "defaultRequire": 1

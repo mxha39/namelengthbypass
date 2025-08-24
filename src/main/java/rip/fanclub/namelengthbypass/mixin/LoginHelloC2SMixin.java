@@ -13,8 +13,8 @@ public class LoginHelloC2SMixin {
             method = "<init>(Lnet/minecraft/network/PacketByteBuf;)V",
             at = @At(value = "INVOKE", target = "Lnet/minecraft/network/PacketByteBuf;readString(I)Ljava/lang/String;")
     )
-    private static int changeLength(int maxLength) {
-        return Constants.newLimit;
+    private static int changeReadNameLengthLimit(int maxLength) {
+        return Constants.NEW_LENGTH_LIMIT;
     }
 
     @ModifyArg(
@@ -22,7 +22,7 @@ public class LoginHelloC2SMixin {
             at = @At(value = "INVOKE", target = "Lnet/minecraft/network/PacketByteBuf;writeString(Ljava/lang/String;I)Lnet/minecraft/network/PacketByteBuf;"),
             index = 1
     )
-    public int changeLength2(int maxLength) {
-        return Constants.newLimit;
+    public int changeWriteNameLengthLimit(int maxLength) {
+        return Constants.NEW_LENGTH_LIMIT;
     }
 }

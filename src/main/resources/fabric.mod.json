@@ -8,7 +8,6 @@
   "contact": {},
   "license": "All-Rights-Reserved",
   "icon": "assets/namelengthbypass/icon.png",
-  "environment": "client",
   "entrypoints": {
     "client": [
       "rip.fanclub.namelengthbypass.client.NamelengthbypassClient"
